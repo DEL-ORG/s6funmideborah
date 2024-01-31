@@ -95,3 +95,9 @@ env:
   valuep: "http://espresso-shop-product-catalog-svc:8091"
   namer: ReviewsUrl
   valuer: "http://espresso-shop-reviews-svc:8092"  
+
+login:
+  # port: 6379
+  masterGroupName: "mymaster"
+  authKey: "sentinel-password"
+  password: "s6oluwafunmilayo"

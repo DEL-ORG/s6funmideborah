@@ -40,6 +40,12 @@ spec:
             value: {{ .Values.env.valuep }}
           - name: {{ .Values.env.namer }}
             value: {{ .Values.env.valuer }}
+          envFrom:
+          - secretRef:
+              name: {{ .Values.appname }}-secret
+          - configMapRef:
+              name: {{ .Values.appname }}-configmap
+
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http 

@@ -81,7 +81,7 @@ tolerations: []
 
 affinity: {}
 
-appname: s6funmi-espressopro
+appname: espresso-shop-product-catalog
 
 labels:
   app: s6funmi-espresso-pro
@@ -93,5 +93,11 @@ PodDisruptionBudget:
 # env:
 #   namep: ProductCatalogUrl
 #   valuep: "http://espresso-shop-product-catalog-svc:8091"
-#   namer: eviewsUrl
+#   namer: ReviewsUrl
 #   valuer: "http://espresso-shop-reviews-svc:8092"  
+
+login:
+  password: "s6oluwafunmilayo"
+  username: "postgres"
+  database: "database"
+  hostname: "s6funmiespresso-postgres-ha-postgresql"

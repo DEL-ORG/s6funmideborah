@@ -329,7 +329,7 @@ sentinel:
   ## Configures sentinel with AUTH (requirepass params)
   auth: false
 
-  # password: password
+  password: s6oluwafunmilayo
 
   ## Use existing secret containing key `authKey` (ignores sentinel.password)
   # existingSecret: sentinel-secret

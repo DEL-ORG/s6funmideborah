@@ -81,7 +81,7 @@ tolerations: []
 
 affinity: {}
 
-appname: s6funmi-espressoreview
+appname: espresso-shop-reviews
 
 labels:
   app: s6funmi-espresso-review
@@ -95,3 +95,9 @@ env:
   name:  SERVICE_VERSION
   valuerv1: "v1"
   valuerv2: "v2"
+
+login:
+  password: "s6oluwafunmilayo"
+  username: "postgres"
+  database: "database"
+  hostname: "s6funmiespresso-postgres-ha-postgresql"

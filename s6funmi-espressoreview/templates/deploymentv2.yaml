@@ -40,6 +40,11 @@ spec:
           env:
             - name: {{ .Values.env.name }}
               value: {{ .Values.env.valuerv2 }}
+          envFrom:
+          - secretRef:
+              name: {{ .Values.appname }}-secret
+          - configMapRef:
+              name: {{ .Values.appname }}-configmap
           ports:
             - name: http 
               containerPort: {{ .Values.service.targetPort }}

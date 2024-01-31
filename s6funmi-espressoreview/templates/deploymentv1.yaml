@@ -38,7 +38,13 @@ spec:
           env:
             - name: {{ .Values.env.name }}
               value: {{ .Values.env.valuerv1 }}
+          envFrom:
+          - secretRef:
+              name: {{ .Values.appname }}-secret
+          - configMapRef:
+              name: {{ .Values.appname }}-configmap
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+  
           ports:
             - name: http 
               containerPort: {{ .Values.service.targetPort }}
